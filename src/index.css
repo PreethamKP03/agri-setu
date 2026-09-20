@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #EFEADD;
+    color: #1C2B1E;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-zilla {
+  font-family: 'Zilla Slab', serif;
+}
+
+.font-mono-plex {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.font-sans-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EFEADD;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9C1A5;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B8862B;
+}
+
+/* Pulse ring animation for live status */
+@keyframes ringPulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(184, 134, 43, 0.4);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(184, 134, 43, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(184, 134, 43, 0);
+  }
+}
+
+.pulse-ring {
+  animation: ringPulse 2s infinite;
+}
+
+/* Glass & Ledger Card styling */
+.ledger-card {
+  background: #FFFFFF;
+  border: 1px solid #DDD6C1;
+  transition: all 0.2s ease-in-out;
+}
+
+.ledger-card:hover {
+  border-color: #B8862B;
+  box-shadow: 0 4px 20px -2px rgba(28, 43, 30, 0.08);
+}

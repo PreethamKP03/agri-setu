@@ -1,0 +1,7 @@
+CPU - Brain of the Computer
+
+RAM - Temporary Memory
+
+SSD - Fast Storage
+
+Operating System - Manages Hardware and Software
